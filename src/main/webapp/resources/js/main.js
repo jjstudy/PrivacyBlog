@@ -5,7 +5,7 @@ function fnSave(){
 	
 	if($("#blogName").val() != '' && $("#user_no").val() != ''){
 		
-	var data = "blogName="+$("#blogName").val()+"&type="+$("input:radio[name=type]:checked").val()+"&user_no="+$("#user_no").val();
+	var data = "blogName="+$("#blogName").val()+"&type="+$("input:radio[name=type]:checked").val();
 	$.ajax({
 		url : "/blogInsert",
 		type : "GET",
@@ -16,7 +16,7 @@ function fnSave(){
 			var html ="";
 			html+="<div>"
 				$.each(data, function(index, obj) {
-					html+="<button id='blog"+index+"' type='button' class='btn btn-default' style='margin:40px;width:200px;height:80px;'>"+obj.blogName+"</button>"
+					html+="<button id='blog"+index+"' type='button' class='btn btn-default' style='0px 85px 40px 0px;width:200px;height:80px;'>"+obj.blogName+"</button>"
 				});
 			html+="</div>"
 			$("#blogListSpace").html(html);
@@ -38,7 +38,7 @@ function blogSelect() {
 			var html ="";
 			html+="<div>"
 				$.each(data, function(index, obj) {
-					html+="<button id='blog"+index+"' type='button' class='btn btn-default' style='margin:40px;width:200px;height:80px;'>"+obj.blogName+"</button>"
+					html+="<button id='blog"+index+"' type='button' class='btn btn-default' style='margin:0px 85px 40px 0px;width:200px;height:80px;'>"+obj.blogName+"</button>"
 				});
 			html+="</div>"
 			$("#blogListSpace").html(html);

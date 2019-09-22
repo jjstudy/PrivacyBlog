@@ -8,5 +8,5 @@ public interface BlogDao {
 
 	int blogInsert(BlogVO blogVO);
 
-	List<BlogVO> blogSelect();
+	List<BlogVO> blogSelect(BlogVO blogVO);
 }

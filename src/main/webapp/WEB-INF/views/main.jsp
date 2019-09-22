@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-
-	<%@include file="include/header.jsp" %> 
+<%@include file="include/header.jsp" %> 
 
 	<section class="container">
 		<c:if test="${sessionScope.userVO ne null}">
@@ -25,7 +24,6 @@
 			      </div>
 			      <div class="modal-body">
 			      		<form>
-						  	<input id="user_no" type="hidden"  name="user_no" value="${sessionScope.userVO.no}"> 
 			        		<input type="text" id="blogName"  name="blogName" placeholder="Blog 명을  입력해주세요."/>
 			        		<input type="button" value="중복확인"/><br>
 			        		<input type="radio" name="type" value="0" checked="checked"/>

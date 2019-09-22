@@ -47,5 +47,9 @@ public class UserController {
 		return "main";
 	}
 	
-	
+	@RequestMapping(value = "logout")
+	public String logOut(HttpSession session) {
+		session.invalidate();
+		return "main";
+	}
 }

@@ -9,7 +9,8 @@
 	
 	<select id="blogSelect" resultType="ex.pb.blog.vo.BlogVO" >
 		SELECT *
-		FROM BLOG 
+		FROM BLOG b
+		WHERE  b.user_no = ${user_no}
 		
 	</select>
 </mapper>

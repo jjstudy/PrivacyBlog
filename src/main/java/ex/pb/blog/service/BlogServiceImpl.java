@@ -20,8 +20,8 @@ public class BlogServiceImpl implements BlogService {
 	}
 
 	@Override
-	public List<BlogVO> blogSelect() {
-		return blogDao.blogSelect();
+	public List<BlogVO> blogSelect(BlogVO blogVO) {
+		return blogDao.blogSelect(blogVO);
 	}
 
 }

@@ -20,9 +20,9 @@ public class BlogDaoImpl implements BlogDao {
 	}
 
 	@Override
-	public List<BlogVO> blogSelect() {
+	public List<BlogVO> blogSelect(BlogVO blogVO) {
 		// TODO Auto-generated method stub
-		return sqlsession.selectList("BlogMpr.blogSelect");
+		return sqlsession.selectList("BlogMpr.blogSelect",blogVO);
 	}
 
 }
