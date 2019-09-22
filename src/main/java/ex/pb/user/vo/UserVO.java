@@ -1,7 +1,5 @@
 package ex.pb.user.vo;
 
-import java.util.Arrays;
-
 public class UserVO {
 	int    no;
 	String id;
@@ -9,7 +7,7 @@ public class UserVO {
 	String password;
 	String email;
 	String address;
-	byte[] profile;
+	String profile;
 	
 	
 	public int getNo() {
@@ -48,17 +46,16 @@ public class UserVO {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public byte[] getProfile() {
+	public String getProfile() {
 		return profile;
 	}
-	public void setProfile(byte[] profile) {
+	public void setProfile(String profile) {
 		this.profile = profile;
 	}
 	@Override
 	public String toString() {
 		return "UserVO [no=" + no + ", id=" + id + ", nickName=" + nickName + ", password=" + password + ", email="
-				+ email + ", address=" + address + ", profile=" + Arrays.toString(profile) + "]";
+				+ email + ", address=" + address + ", profile=" + profile + "]";
 	}
-
 	
 }

@@ -31,7 +31,7 @@ function signUp() {
 }
 </script>
 <section class="content">
- 	<form id="signUpForm" action="signUp" method="post">
+ 	<form id="signUpForm" action="signUp" method="post" enctype="multipart/form-data">
  	  <div class="panel-group"  style="width: 40%;margin:0 auto;">
 		    	<div class="panel panel-default">
 				      <div class="panel-heading">Login</div>
@@ -47,6 +47,8 @@ function signUp() {
 							<input type="text" id="email" name="email"  class="form-control"/><br>
 							주소
 							<input type="text" id="address" name="address"  class="form-control"/><br>
+							프로필 
+							<input type="file" id="profile" name="profile"/><br>
 							<input type="button" value="가입" style="width: 50%;" class="btn btn-default" onclick="signUp()">
 							<a href="/"><input type="reset" value="취소" style="width: 50%;float: right;" class="btn btn-default"></a>
 						</div>	
